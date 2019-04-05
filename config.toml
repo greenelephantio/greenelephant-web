@@ -1,7 +1,7 @@
 # Site settings
 baseurl = "https://greenelephant.io/"
 languageCode = "en-us"
-title = "greenelephant Consulting IT AB"
+title = "greenelephant IT Consulting AB"
 theme = "hugo-freelancer-theme"
 
 
