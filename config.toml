@@ -108,7 +108,7 @@ theme = "hugo-freelancer-theme"
             # CSS class.
             [[params.footer.social.networks]]
                 icon = "fa-github"
-                link = "//github.com/greeenelephantio"
+                link = "//github.com/greenelephantio"
 
 
         [params.footer.credits]
