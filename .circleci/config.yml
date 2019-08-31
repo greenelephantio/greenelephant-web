@@ -32,8 +32,8 @@ workflows:
   version: 2
   build-and-deploy:
     jobs:
-      - build:
-      - deploy-base:
+      - build
+      - deploy:
           requires:
             - build
           filters:
