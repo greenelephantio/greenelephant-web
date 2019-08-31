@@ -6,6 +6,7 @@ executors:
       - image: lnhcode/hugo:latest
     working_directory: ~/greenelephant.io/
   aws-cli-executor:
+    docker:
       - image: infrastructureascode/aws-cli:1.16.229
     working_directory: ~/greenelephant.io/
 
