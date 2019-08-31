@@ -16,10 +16,10 @@ jobs:
     steps:
       - checkout
       - run: hugo
-    persist_to_workspace:
-      root: ~/greenelephant.io/
-      paths:
-        - public
+      - persist_to_workspace:
+          root: ~/greenelephant.io/
+          paths:
+            - public
   deploy:
     executor: aws-cli-executor
     steps:
