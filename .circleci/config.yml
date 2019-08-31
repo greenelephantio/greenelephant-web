@@ -24,7 +24,7 @@ jobs:
     executor: aws-cli-executor
     steps:
       - attach_workspace:
-        at: ~/greenelephant.io/
+          at: ~/greenelephant.io/
       - run: aws s3 delete <params>
       - run: aws s3 sync <param>
 
