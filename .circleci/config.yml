@@ -25,13 +25,13 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/greenelephant.io/
-      - run: aws s3 sync public/ s3://www.greenelephant.io
+      - run: aws s3 sync public/ s3://www.greenelephant.io --delete
   deploy-branch:
     executor: aws-cli-executor
     steps:
       - attach_workspace:
           at: ~/greenelephant.io/
-      - run: aws s3 sync public/ s3://www.greenelephant.io-branch
+      - run: aws s3 sync public/ s3://www.greenelephant.io-branch --delete
 
 workflows:
   version: 2
