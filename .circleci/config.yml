@@ -7,7 +7,7 @@ executors:
     working_directory: ~/greenelephant.io/
   aws-cli-executor:
     docker:
-      - image: infrastructureascode/aws-cli:1.16.229
+      - image: circleci/node:10-browsers
     working_directory: ~/greenelephant.io/
 
 jobs:
