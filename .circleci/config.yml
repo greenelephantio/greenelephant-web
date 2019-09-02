@@ -1,0 +1,54 @@
+version: 2.1
+
+executors: 
+  hugo-executor:
+    docker:
+      - image: lnhcode/hugo:latest
+    working_directory: ~/greenelephant.io/
+  aws-cli-executor:
+    docker:
+      - image: garland/aws-cli-docker:1.16.140
+    working_directory: ~/greenelephant.io/
+
+jobs:
+  build:
+    executor: hugo-executor
+    steps:
+      - checkout
+      - run: hugo
+      - persist_to_workspace:
+          root: ~/greenelephant.io/
+          paths:
+            - public
+  deploy:
+    executor: aws-cli-executor
+    steps:
+      - attach_workspace:
+          at: ~/greenelephant.io/
+      - run: aws s3 sync public/ s3://www.greenelephant.io --delete
+  deploy-branch:
+    executor: aws-cli-executor
+    steps:
+      - attach_workspace:
+          at: ~/greenelephant.io/
+      - run: aws s3 sync public/ s3://www.greenelephant.io-branch --delete
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: 
+                - master
+      - deploy-branch:
+          requires:
+            - build
+          filters:
+            branches:
+              ignore: 
+                - master
