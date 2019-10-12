@@ -61,7 +61,7 @@ theme = "hugo-freelancer-theme"
         title = "About"
         # The about text is splitted into a left and right column
         left = "So what does an organization need to embrace new technologies? How can we work to design and create successfull services? This is the theme we want to explore with you. "
-        right = "Our work is workshop based. Be prapared to dive into the topic and work with us instead of being an observer and you can expect to return home with insights and tools to be able to start digging (for gold) where you are!"
+        right = "Our work is workshop based. Be prepared to dive into the topic and work with us instead of being an observer and you can expect to return home with insights and tools to be able to start digging (for gold) where you are!"
 
         [params.about.button]
             text = "Visit our github repo"
