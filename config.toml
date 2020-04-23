@@ -68,6 +68,8 @@ theme = "hugo-freelancer-theme"
             link = "//github.com/greenelephantio/"
             icon = "github"
 
+    [params.team]
+        title = "Team"
 
     [params.contact]
         title = "Contact"
