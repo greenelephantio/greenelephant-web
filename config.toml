@@ -48,11 +48,11 @@ theme = "hugo-freelancer-theme"
         # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
         # at the root of this Hugo site.
         # For more informtion take a look at the README.
-        title = "Workshop Portfolio"
+        title = "Portfolio"
 
         [params.portfolio.modal]
-            client = "Knowledge Level"
-            date = "Date"
+            client = "Client"
+            date = "Type"
             category = "Category"
             buttontext = "Close"
 
@@ -60,8 +60,8 @@ theme = "hugo-freelancer-theme"
     [params.about]
         title = "About"
         # The about text is splitted into a left and right column
-        left = "So what does an organization need to embrace new technologies? How can we work to design and create successfull services? This is the theme we want to explore with you. "
-        right = "Our work is workshop based. Be prepared to dive into the topic and work with us instead of being an observer and you can expect to return home with insights and tools to be able to start digging (for gold) where you are!"
+        left = "So what does an organization need to embrace the Cloud? How can we work to design and create successfull services quickly?"
+        right = "We can help you start quickly with templates based on cloud best practices."
 
         [params.about.button]
             text = "Visit our github repo"

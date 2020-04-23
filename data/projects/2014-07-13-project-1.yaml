@@ -1,8 +1,8 @@
 modalID: 1
-title: GitLab CI/CD Workshop
-date: Contact for session.
-img: greenelephant-gitlabrunner.png
-client: Beginner
-Location: Sweden
-category: DevOps
-description: GitLab is a web-based DevOps lifecycle tool that provides a Git-repository manager providing wiki, issue-tracking and CI/CD pipeline features. The aim of this workshop is to get the participants up and running with GitLabs Runners (CI/CD) from installing a runner to deploying a working application in the cloud.
+title: Cloud Journey Quick Start
+date: On-Site
+img: greenelephant.png
+client: Developers
+Location: Nordics
+category: Cloud Adoption
+description: Avoid common pitfalls when starting your cloud journey, we will assist you with best practice templates so you can quickly get value out of your cloud investment.
