@@ -459,3 +459,27 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+.team-name {    
+    padding-top: 30px;
+    text-align: center;
+}
+
+.team-description {   
+    padding-top: 30px; 
+    text-align: center;
+}
+
+.team-title {
+    padding-top: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.team-image {
+    border-radius: 50%;
+    height: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
