@@ -3,7 +3,7 @@ version: 2.1
 executors: 
   hugo-executor:
     docker:
-      - image: lnhcode/hugo:latest
+      - image: lnhcode/hugo:0.67.0
     working_directory: ~/greenelephant.io/
   aws-cli-executor:
     docker:
