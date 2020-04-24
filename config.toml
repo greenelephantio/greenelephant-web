@@ -60,8 +60,8 @@ theme = "hugo-freelancer-theme"
     [params.about]
         title = "About"
         # The about text is splitted into a left and right column
-        left = "So what does an organization need to embrace the Cloud? How can we work to design and create successfull services quickly?"
-        right = "We can help you start quickly with templates based on cloud best practices."
+        left = "What does an organization need to embrace the Cloud? How can we work to design and create successful services quickly?"
+        right = "We can help you to quickly get started with templates based on cloud best practices."
 
         [params.about.button]
             text = "Visit our github repo"
